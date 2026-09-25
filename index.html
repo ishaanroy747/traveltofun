@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelToFun | Travel Guides, Destinations & Travel Tips</title>
+
+    <meta name="description"
+        content="Explore TravelToFun for destination guides, travel inspiration, visa information, holiday ideas and practical travel tips for your next journey.">
+
+    <meta name="keywords"
+        content="travel guides, travel tips, destinations, visa information, holiday ideas, Dubai travel">
+
+    <meta name="author" content="TravelToFun">
+
+    <meta property="og:title" content="TravelToFun | Explore More, Travel More">
+    <meta property="og:description"
+        content="Discover destinations, travel guides, visa information and practical travel tips with TravelToFun.">
+    <meta property="og:type" content="website">
+
+    <link rel="canonical" href="https://traveltofun.onrender.com/">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111827;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #0d9488;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 600;
+            color: #374151;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #0d9488;
+        }
+
+        .nav-button {
+            background: #0d9488;
+            color: white !important;
+            padding: 11px 19px;
+            border-radius: 7px;
+        }
+
+        .nav-button:hover {
+            background: #0f766e;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(8, 20, 34, 0.88),
+                    rgba(8, 20, 34, 0.52),
+                    rgba(8, 20, 34, 0.20)
+                ),
+                url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 680px;
+            color: white;
+            padding: 90px 0;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 7px 14px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1.04;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 610px;
+            color: #f1f5f9;
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 22px;
+            border-radius: 7px;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .btn-primary {
+            background: #0d9488;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #172033;
+        }
+
+        /* GENERAL */
+
+        .section {
+            padding: 85px 0;
+        }
+
+        .section-heading {
+            max-width: 700px;
+            margin-bottom: 42px;
+        }
+
+        .section-heading .small-title {
+            color: #0d9488;
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .section-heading h2 {
+            font-size: 38px;
+            line-height: 1.15;
+            margin-bottom: 14px;
+            color: #111827;
+        }
+
+        .section-heading p {
+            color: #64748b;
+            font-size: 17px;
+        }
+
+        /* RESOURCE CARDS */
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .resource-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            overflow: hidden;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+        }
+
+        .resource-card img {
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .card-content p {
+            color: #64748b;
+            margin-bottom: 18px;
+        }
+
+        .text-link {
+            color: #0d9488;
+            font-weight: 700;
+        }
+
+        /* DUBAI SECTION */
+
+        .dubai-section {
+            background: #f7faf9;
+        }
+
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .package-card {
+            background: white;
+            border-radius: 13px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            transition: 0.3s;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+        }
+
+        .package-card img {
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .package-content {
+            padding: 21px;
+        }
+
+        .package-label {
+            font-size: 12px;
+            color: #0d9488;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: .7px;
+            margin-bottom: 8px;
+        }
+
+        .package-content h3 {
+            font-size: 19px;
+            line-height: 1.3;
+            margin-bottom: 10px;
+        }
+
+        .package-content p {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image img {
+            height: 460px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .about-content h2 {
+            font-size: 40px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: #64748b;
+            margin-bottom: 18px;
+            font-size: 16px;
+        }
+
+        /* BLOG */
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .blog-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 13px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .blog-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 23px;
+        }
+
+        .blog-category {
+            color: #0d9488;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .blog-content h3 {
+            font-size: 20px;
+            line-height: 1.3;
+            margin: 9px 0 10px;
+        }
+
+        .blog-content p {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* CTA */
+
+        .cta {
+            padding: 80px 0;
+        }
+
+        .cta-box {
+            background:
+                linear-gradient(
+                    100deg,
+                    #0f766e,
+                    #0d9488
+                );
+            border-radius: 18px;
+            padding: 65px 45px;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-box h2 {
+            font-size: 40px;
+            line-height: 1.15;
+            margin-bottom: 15px;
+        }
+
+        .cta-box p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            color: #e6fffb;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #111827;
+            color: #cbd5e1;
+            padding: 55px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 35px;
+            margin-bottom: 45px;
+        }
+
+        .footer-brand h3 {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand span {
+            color: #2dd4bf;
+        }
+
+        .footer-brand p {
+            max-width: 330px;
+            color: #94a3b8;
+        }
+
+        .footer-column h4 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #94a3b8;
+            margin-bottom: 9px;
+            font-size: 14px;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #263244;
+            padding-top: 22px;
+            font-size: 13px;
+            color: #64748b;
+            text-align: center;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            nav {
+                gap: 14px;
+            }
+
+            .package-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .resource-grid,
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            .navbar {
+                padding: 15px 0;
+                align-items: flex-start;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                min-height: 620px;
+            }
+
+            .hero h1 {
+                font-size: 44px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-heading h2,
+            .about-content h2 {
+                font-size: 31px;
+            }
+
+            .package-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-box {
+                padding: 45px 25px;
+            }
+
+            .cta-box h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            Travel<span>To</span>Fun
+        </a>
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html" class="nav-button">Contact</a>
+</nav>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                TRAVEL • EXPLORE • DISCOVER
+            </span>
+
+            <h1>
+                Explore More.<br>
+                Travel More.
+            </h1>
+
+            <p>
+                Discover inspiring destinations, practical travel guides,
+                holiday ideas and useful travel information to help you
+                plan your next journey.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#destinations" class="btn btn-primary">
+                    Explore Destinations
+                </a>
+
+                <a href="#guides" class="btn btn-secondary">
+                    Travel Guides
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRAVEL RESOURCES -->
+
+<section class="section" id="destinations">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                Travel Resources
+            </div>
+
+            <h2>
+                Everything You Need for Your Next Journey
+            </h2>
+
+            <p>
+                Find destination inspiration, practical travel information
+                and useful resources to make trip planning easier.
+            </p>
+
+        </div>
+
+
+        <div class="resource-grid">
+
+            <article class="resource-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=900&q=85"
+                    alt="Traveler exploring a scenic destination"
+                >
+
+                <div class="card-content">
+
+                    <h3>Destination Guides</h3>
+
+                    <p>
+                        Discover popular destinations, attractions,
+                        experiences, travel seasons and practical planning tips.
+                    </p>
+
+                    <a href="#" class="text-link">
+                        Explore Destinations →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="resource-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=900&q=85"
+                    alt="Passport and travel documents"
+                >
+
+                <div class="card-content">
+
+                    <h3>Visa Information</h3>
+
+                    <p>
+                        Learn about tourist visa requirements, documents
+                        and important considerations for international travel.
+                    </p>
+
+                    <a href="#" class="text-link">
+                        Explore Visa Guides →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="resource-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=85"
+                    alt="Airplane flying through the sky"
+                >
+
+                <div class="card-content">
+
+                    <h3>Travel Planning</h3>
+
+                    <p>
+                        Find itinerary ideas, travel tips, transportation
+                        guidance and useful planning information.
+                    </p>
+
+                    <a href="#guides" class="text-link">
+                        Plan Your Trip →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DUBAI EXPERIENCES -->
+
+<section class="section dubai-section" id="packages">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                Featured Travel Experiences
+            </div>
+
+            <h2>
+                Discover Dubai Your Way
+            </h2>
+
+            <p>
+                From family holidays and romantic escapes to exciting trips
+                with friends, explore Dubai experiences for different travel styles.
+            </p>
+
+        </div>
+
+
+        <div class="package-grid">
+
+
+            <!-- PACKAGE 1 -->
+
+            <article class="package-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85"
+                    alt="Dubai skyline and Burj Khalifa"
+                >
+
+                <div class="package-content">
+
+                    <div class="package-label">
+                        Dubai Holiday
+                    </div>
+
+                    <h3>
+                        Dubai 6 Days Tour Package
+                    </h3>
+
+                    <p>
+                        Discover Dubai's iconic landmarks, entertainment,
+                        sightseeing and desert experiences.
+                    </p>
+
+                    <a
+                        href="https://travelsagaholidays.in/travel/dubai-6-days-tour-package/"
+                        target="_blank"
+                        rel="noopener"
+                        class="text-link"
+                    >
+                        Explore Package →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PACKAGE 2 -->
+
+            <article class="package-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=85"
+                    alt="Romantic Dubai skyline experience"
+                >
+
+                <div class="package-content">
+
+                    <div class="package-label">
+                        Romantic Getaway
+                    </div>
+
+                    <h3>
+                        7 Days Dubai Honeymoon Package
+                    </h3>
+
+                    <p>
+                        Plan a romantic Dubai escape filled with sightseeing,
+                        memorable experiences and relaxing moments.
+                    </p>
+
+                    <a
+                        href="https://travelsagaholidays.in/travel/7-days-dubai-honeymoon-package/"
+                        target="_blank"
+                        rel="noopener"
+                        class="text-link"
+                    >
+                        Explore Package →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PACKAGE 3 -->
+
+            <article class="package-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=900&q=85"
+                    alt="Family holiday in Dubai"
+                >
+
+                <div class="package-content">
+
+                    <div class="package-label">
+                        Family Holiday
+                    </div>
+
+                    <h3>
+                        5 Days Dubai Tour Package for Families
+                    </h3>
+
+                    <p>
+                        Explore family-friendly attractions, sightseeing,
+                        entertainment and memorable Dubai experiences.
+                    </p>
+
+                    <a
+                        href="https://travelsagaholidays.in/travel/5-days-dubai-tour-package-for-families/"
+                        target="_blank"
+                        rel="noopener"
+                        class="text-link"
+                    >
+                        Explore Package →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PACKAGE 4 -->
+
+            <article class="package-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=85"
+                    alt="Friends enjoying Dubai travel"
+                >
+
+                <div class="package-content">
+
+                    <div class="package-label">
+                        Friends & Adventure
+                    </div>
+
+                    <h3>
+                        7 Days Dubai Tour Package for Bachelors
+                    </h3>
+
+                    <p>
+                        Enjoy Dubai with friends through sightseeing,
+                        adventure, entertainment and exciting experiences.
+                    </p>
+
+                    <a
+                        href="https://travelsagaholidays.in/travel/7-days-dubai-tour-package-for-bachelors/"
+                        target="_blank"
+                        rel="noopener"
+                        class="text-link"
+                    >
+                        Explore Package →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+
+    <div class="container about">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=85"
+                alt="Traveler exploring a new destination"
+            >
+
+        </div>
+
+
+        <div class="about-content">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    About TravelToFun
+                </div>
+
+                <h2>
+                    Travel Inspiration Made Simpler
+                </h2>
+
+            </div>
+
+            <p>
+                TravelToFun is a travel information platform created for
+                curious travelers looking for destination inspiration,
+                practical travel advice and useful trip-planning resources.
+            </p>
+
+            <p>
+                From discovering new places to researching travel
+                requirements and planning holiday experiences, our goal is
+                to bring helpful information together in one easy-to-explore
+                destination.
+            </p>
+
+            <a href="#guides" class="btn btn-primary">
+                Explore Travel Guides
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRAVEL GUIDES -->
+
+<section class="section" id="guides">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                Travel Inspiration
+            </div>
+
+            <h2>
+                Latest Travel Guides & Ideas
+            </h2>
+
+            <p>
+                Explore useful travel content covering destinations,
+                visas, itineraries and trip-planning ideas.
+            </p>
+
+        </div>
+
+
+        <div class="blog-grid">
+
+
+            <article class="blog-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=85"
+                    alt="Dubai city travel guide"
+                >
+
+                <div class="blog-content">
+
+                    <div class="blog-category">
+                        Destination Guide
+                    </div>
+
+                    <h3>
+                        Planning Your Next Dubai Adventure
+                    </h3>
+
+                    <p>
+                        Discover ideas for exploring Dubai's landmarks,
+                        attractions, experiences and neighborhoods.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1521292270410-a8c4d716d518?auto=format&fit=crop&w=900&q=85"
+                    alt="Travel planning and destination research"
+                >
+
+                <div class="blog-content">
+
+                    <div class="blog-category">
+                        Travel Planning
+                    </div>
+
+                    <h3>
+                        How to Prepare for an International Trip
+                    </h3>
+
+                    <p>
+                        Explore practical considerations for documents,
+                        accommodation, flights and travel preparation.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=900&q=85"
+                    alt="Traveler with backpack exploring the world"
+                >
+
+                <div class="blog-content">
+
+                    <div class="blog-category">
+                        Travel Tips
+                    </div>
+
+                    <h3>
+                        Simple Tips for Planning a Better Holiday
+                    </h3>
+
+                    <p>
+                        Helpful ideas for organizing your itinerary,
+                        choosing experiences and preparing for your journey.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta" id="contact">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>
+                Start Planning Your Next Journey
+            </h2>
+
+            <p>
+                Discover destinations, explore travel ideas and find useful
+                information to make your next trip easier to plan.
+            </p>
+
+            <a href="#destinations" class="btn btn-secondary">
+                Start Exploring
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <h3>
+                    Travel<span>To</span>Fun
+                </h3>
+
+                <p>
+                    Travel inspiration, destination guides and practical
+                    information for curious travelers exploring the world.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="#destinations">Destinations</a>
+                <a href="#packages">Travel Experiences</a>
+                <a href="#guides">Travel Guides</a>
+                <a href="#about">About Us</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Travel</h4>
+
+                <a href="#">Visa Guides</a>
+                <a href="#">Travel Tips</a>
+                <a href="#">Itineraries</a>
+                <a href="#">Holiday Ideas</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 TravelToFun. All rights reserved.
+            <br>
+            Travel Guides • Destinations • Travel Tips • Travel Inspiration
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
