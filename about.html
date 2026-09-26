@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About TravelToFun | Travel Guides & Inspiration</title>
+
+    <meta name="description"
+        content="Learn about TravelToFun, a travel information platform offering destination guides, travel tips, holiday ideas and useful visa resources.">
+
+    <meta name="keywords"
+        content="about TravelToFun, travel guides, travel information, travel tips, destination guides, holiday ideas">
+
+    <meta name="author" content="TravelToFun">
+
+    <meta property="og:title"
+        content="About TravelToFun | Travel Guides & Inspiration">
+
+    <meta property="og:description"
+        content="Discover the purpose behind TravelToFun and explore useful travel information, destination guides and travel inspiration.">
+
+    <meta property="og:type" content="website">
+
+    <!-- Replace with your actual Render URL -->
+    <link rel="canonical" href="https://traveltofun.onrender.com/about.html">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111827;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #0d9488;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 600;
+            color: #374151;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #0d9488;
+        }
+
+        .nav-button {
+            background: #0d9488;
+            color: white !important;
+            padding: 11px 19px;
+            border-radius: 7px;
+        }
+
+        .nav-button:hover {
+            background: #0f766e;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .page-hero {
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(8, 20, 34, 0.88),
+                    rgba(8, 20, 34, 0.55),
+                    rgba(8, 20, 34, 0.22)
+                ),
+
+                url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: rgba(255,255,255,0.14);
+            border: 1px solid rgba(255,255,255,0.28);
+            border-radius: 30px;
+            padding: 7px 14px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            margin-bottom: 18px;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(42px, 6vw, 64px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            max-width: 650px;
+            font-size: 18px;
+            color: #e5e7eb;
+        }
+
+
+        /* =========================
+           INTRO
+        ========================= */
+
+        .section {
+            padding: 85px 0;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .intro-image img {
+            height: 500px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+        .small-title {
+            color: #0d9488;
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .intro-content h2 {
+            font-size: 40px;
+            line-height: 1.15;
+            color: #111827;
+            margin-bottom: 20px;
+        }
+
+        .intro-content p {
+            color: #64748b;
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+
+
+        /* =========================
+           MISSION
+        ========================= */
+
+        .mission-section {
+            background: #f7faf9;
+        }
+
+        .section-heading {
+            max-width: 760px;
+            margin-bottom: 40px;
+        }
+
+        .section-heading h2 {
+            font-size: 38px;
+            line-height: 1.15;
+            color: #111827;
+            margin-bottom: 14px;
+        }
+
+        .section-heading p {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .mission-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 30px;
+            transition: .3s ease;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 30px rgba(0,0,0,.07);
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background: #ccfbf1;
+            color: #0f766e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .mission-card h3 {
+            font-size: 21px;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .mission-card p {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           WHAT WE COVER
+        ========================= */
+
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .coverage-content h2 {
+            font-size: 38px;
+            line-height: 1.15;
+            color: #111827;
+            margin-bottom: 18px;
+        }
+
+        .coverage-content > p {
+            color: #64748b;
+            margin-bottom: 25px;
+        }
+
+        .coverage-list {
+            list-style: none;
+        }
+
+        .coverage-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            color: #475569;
+        }
+
+        .coverage-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #0d9488;
+            font-weight: 800;
+        }
+
+        .coverage-image img {
+            height: 440px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+
+        /* =========================
+           TRAVEL TOPICS
+        ========================= */
+
+        .topics-section {
+            background: #f7faf9;
+        }
+
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .topic-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .topic-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #111827;
+        }
+
+        .topic-card p {
+            color: #64748b;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           RESPONSIBLE INFORMATION
+        ========================= */
+
+        .notice {
+            background: #ecfdf9;
+            border: 1px solid #ccfbf1;
+            border-radius: 14px;
+            padding: 30px;
+        }
+
+        .notice h2 {
+            font-size: 25px;
+            color: #134e4a;
+            margin-bottom: 10px;
+        }
+
+        .notice p {
+            color: #475569;
+            font-size: 15px;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            padding: 75px 0;
+        }
+
+        .cta-box {
+            background: linear-gradient(
+                100deg,
+                #0f766e,
+                #0d9488
+            );
+
+            border-radius: 18px;
+            padding: 60px 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-box h2 {
+            font-size: 38px;
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+
+        .cta-box p {
+            max-width: 680px;
+            margin: 0 auto 25px;
+            color: #e6fffb;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #0f766e;
+            padding: 13px 23px;
+            border-radius: 7px;
+            font-weight: 700;
+        }
+
+        .cta-button:hover {
+            background: #f0fdfa;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #111827;
+            color: #cbd5e1;
+            padding: 55px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 35px;
+            margin-bottom: 45px;
+        }
+
+        .footer-brand h3 {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand span {
+            color: #2dd4bf;
+        }
+
+        .footer-brand p {
+            max-width: 330px;
+            color: #94a3b8;
+        }
+
+        .footer-column h4 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #94a3b8;
+            margin-bottom: 9px;
+            font-size: 14px;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #263244;
+            padding-top: 22px;
+            font-size: 13px;
+            color: #64748b;
+            text-align: center;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 1000px) {
+
+            .intro-grid,
+            .coverage-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mission-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .topic-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                min-height: 68px;
+            }
+
+            nav {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .nav-button {
+                padding: 8px 12px;
+            }
+
+            .logo {
+                font-size: 22px;
+            }
+
+            .page-hero {
+                min-height: 500px;
+            }
+
+            .hero-content h1 {
+                font-size: 43px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .intro-content h2,
+            .coverage-content h2,
+            .section-heading h2 {
+                font-size: 31px;
+            }
+
+            .mission-grid,
+            .topic-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-box {
+                padding: 45px 25px;
+            }
+
+            .cta-box h2 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            Travel<span>To</span>Fun
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="blogs.html">
+                Blogs
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html" class="nav-button">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                ABOUT TRAVELTOFUN
+            </span>
+
+            <h1>
+                Discover the World<br>
+                With Better Information
+            </h1>
+
+            <p>
+                TravelToFun is a travel information platform created to
+                bring destination inspiration, practical travel resources
+                and useful trip-planning information together in one place.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT TRAVELTOFUN
+========================= -->
+
+<section class="section">
+
+    <div class="container intro-grid">
+
+
+        <div class="intro-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1521292270410-a8c4d716d518?auto=format&fit=crop&w=1200&q=85"
+                alt="Traveler planning an international journey"
+                loading="lazy"
+            >
+
+        </div>
+
+
+
+        <div class="intro-content">
+
+            <div class="small-title">
+                Who We Are
+            </div>
+
+            <h2>
+                A Place to Explore Travel Ideas
+            </h2>
+
+            <p>
+                TravelToFun is built for people who enjoy discovering new
+                places and researching their next journey before they travel.
+            </p>
+
+            <p>
+                The platform brings together destination guides, travel
+                planning ideas, holiday inspiration, visa-related resources
+                and practical travel tips covering different parts of the
+                world.
+            </p>
+
+            <p>
+                Our goal is to make travel research easier to navigate by
+                presenting useful information in a clear and straightforward
+                format.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     OUR APPROACH
+========================= -->
+
+<section class="section mission-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                Our Approach
+            </div>
+
+            <h2>
+                Useful Information for Curious Travelers
+            </h2>
+
+            <p>
+                Travel planning often involves researching several different
+                things before making a decision. TravelToFun focuses on
+                organizing travel information around common traveler needs.
+            </p>
+
+        </div>
+
+
+
+        <div class="mission-grid">
+
+
+            <article class="mission-card">
+
+                <div class="icon">
+                    01
+                </div>
+
+                <h3>
+                    Destination Inspiration
+                </h3>
+
+                <p>
+                    Discover destinations, attractions, experiences and
+                    travel ideas that can help you explore possible holiday
+                    plans.
+                </p>
+
+            </article>
+
+
+
+            <article class="mission-card">
+
+                <div class="icon">
+                    02
+                </div>
+
+                <h3>
+                    Practical Travel Guides
+                </h3>
+
+                <p>
+                    Find useful information about trip planning, itineraries,
+                    travel preparation and other practical considerations.
+                </p>
+
+            </article>
+
+
+
+            <article class="mission-card">
+
+                <div class="icon">
+                    03
+                </div>
+
+                <h3>
+                    Travel Research
+                </h3>
+
+                <p>
+                    Explore travel topics in one place so you can compare
+                    destinations, experiences and planning requirements.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHAT WE COVER
+========================= -->
+
+<section class="section">
+
+    <div class="container coverage-grid">
+
+
+        <div class="coverage-content">
+
+            <div class="small-title">
+                What We Cover
+            </div>
+
+            <h2>
+                Travel Topics for Different Types of Journeys
+            </h2>
+
+            <p>
+                TravelToFun covers a range of topics that can be useful
+                before and during the travel-planning process.
+            </p>
+
+
+            <ul class="coverage-list">
+
+                <li>
+                    Destination guides and travel inspiration
+                </li>
+
+                <li>
+                    Dubai holiday and tour package information
+                </li>
+
+                <li>
+                    International tourist visa resources
+                </li>
+
+                <li>
+                    Travel tips and trip-planning ideas
+                </li>
+
+                <li>
+                    Family, couple and group travel inspiration
+                </li>
+
+                <li>
+                    International travel planning resources
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div class="coverage-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
+                alt="Traveler enjoying a scenic destination"
+                loading="lazy"
+            >
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     TOPICS
+========================= -->
+
+<section class="section topics-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                Travel Topics
+            </div>
+
+            <h2>
+                Explore Different Sides of Travel
+            </h2>
+
+            <p>
+                Browse TravelToFun for information and inspiration across
+                several travel-related topics.
+            </p>
+
+        </div>
+
+
+
+        <div class="topic-grid">
+
+
+            <article class="topic-card">
+
+                <h3>
+                    Destinations
+                </h3>
+
+                <p>
+                    Discover cities, countries and popular travel locations.
+                </p>
+
+            </article>
+
+
+
+            <article class="topic-card">
+
+                <h3>
+                    Holiday Ideas
+                </h3>
+
+                <p>
+                    Explore ideas for family, couple, group and leisure trips.
+                </p>
+
+            </article>
+
+
+
+            <article class="topic-card">
+
+                <h3>
+                    Visa Guides
+                </h3>
+
+                <p>
+                    Research tourist visa topics and international travel
+                    requirements.
+                </p>
+
+            </article>
+
+
+
+            <article class="topic-card">
+
+                <h3>
+                    Travel Tips
+                </h3>
+
+                <p>
+                    Find practical ideas for planning and preparing for trips.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     INFORMATION NOTICE
+========================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="notice">
+
+            <h2>
+                Travel Information Can Change
+            </h2>
+
+            <p>
+                Travel requirements, visa rules, entry conditions, airline
+                schedules and other travel-related information can change
+                over time. Information on TravelToFun is intended as a
+                starting point for research. Travelers should verify
+                destination-specific requirements and current conditions
+                with relevant official sources before making arrangements.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>
+                Start Exploring Your Next Journey
+            </h2>
+
+            <p>
+                Browse our travel services and guides to discover destinations,
+                holiday ideas and useful travel resources.
+            </p>
+
+            <a href="services.html" class="cta-button">
+                Explore Services
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <h3>
+                    Travel<span>To</span>Fun
+                </h3>
+
+                <p>
+                    Travel inspiration, destination guides and practical
+                    information for curious travelers exploring the world.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="blogs.html">
+                    Blogs
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Travel Topics
+                </h4>
+
+                <a href="services.html">
+                    Dubai Tour Packages
+                </a>
+
+                <a href="services.html">
+                    Tourist Visa Guides
+                </a>
+
+                <a href="blogs.html">
+                    Travel Tips
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            © 2026 TravelToFun. All rights reserved.
+
+            <br>
+
+            Travel Guides • Destinations • Visa Information • Travel Tips
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
