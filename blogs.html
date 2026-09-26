@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Blogs Coming Soon | TravelToFun</title>
+
+    <meta name="description" content="TravelToFun blogs are coming soon with destination guides, travel tips, visa resources and holiday inspiration.">
+
+    <link rel="canonical" href="https://traveltofun.onrender.com/blogs.html">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #263238;
+            background: #f7fbfb;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navbar */
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e4eeee;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: 700;
+            color: #008c8c;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #263238;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            color: #008c8c;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #007f7f, #00a6a6);
+            color: white;
+            padding: 85px 7%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        /* Coming Soon */
+        .coming-soon {
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 70px 7%;
+        }
+
+        .coming-box {
+            width: 100%;
+            max-width: 850px;
+            background: #ffffff;
+            padding: 65px 45px;
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+        }
+
+        .coming-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px;
+            background: #e7f8f8;
+            color: #008c8c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+        }
+
+        .coming-box h2 {
+            font-size: 36px;
+            color: #263238;
+            margin-bottom: 15px;
+        }
+
+        .coming-box p {
+            max-width: 650px;
+            margin: 0 auto 28px;
+            color: #607d8b;
+            font-size: 17px;
+        }
+
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .topic {
+            background: #eefafa;
+            color: #008c8c;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #008c8c;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 7px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #006f6f;
+        }
+
+        /* Footer */
+        footer {
+            background: #17272b;
+            color: #d9e4e6;
+            padding: 45px 7% 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 35px;
+        }
+
+        footer h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #b8c8cc;
+            max-width: 500px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 9px;
+        }
+
+        .footer-links a {
+            color: #b8c8cc;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #314448;
+            padding-top: 20px;
+            text-align: center;
+            color: #9fb1b5;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 850px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 18px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 65px 6%;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .coming-soon {
+                padding: 50px 6%;
+            }
+
+            .coming-box {
+                padding: 45px 25px;
+            }
+
+            .coming-box h2 {
+                font-size: 29px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">TravelToFun</a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blogs.html" class="active">Blogs</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Travel Blogs</h1>
+
+        <p>
+            Helpful travel guides, destination inspiration, visa information
+            and practical travel tips are coming soon.
+        </p>
+    </section>
+
+    <!-- Coming Soon -->
+    <section class="coming-soon">
+
+        <div class="coming-box">
+
+            <div class="coming-icon">
+                ✈
+            </div>
+
+            <h2>Blogs Coming Soon</h2>
+
+            <p>
+                We are preparing useful and informative travel content for
+                TravelToFun. Soon, you will be able to explore destination
+                guides, holiday ideas, visa resources and practical travel tips.
+            </p>
+
+            <div class="topics">
+                <span class="topic">Destination Guides</span>
+                <span class="topic">Travel Tips</span>
+                <span class="topic">Visa Guides</span>
+                <span class="topic">Holiday Ideas</span>
+                <span class="topic">Travel Inspiration</span>
+            </div>
+
+            <a href="services.html" class="cta-btn">
+                Explore Travel Services
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>TravelToFun</h3>
+
+                <p>
+                    TravelToFun is a travel information platform offering
+                    destination inspiration, travel guides, holiday ideas,
+                    visa resources and practical travel information.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="tel:+917300007075">
+                            +91 73000 07075
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:info@travelsagaholidays.in">
+                            info@travelsagaholidays.in
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 TravelToFun. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
