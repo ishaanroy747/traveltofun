@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Travel Blogs Coming Soon | TravelToFun</title>
+    <title>Travel Blogs | Dubai Travel Guides & Tips | TravelToFun</title>
 
-    <meta name="description" content="TravelToFun blogs are coming soon with destination guides, travel tips, visa resources and holiday inspiration.">
+    <meta name="description" content="Explore TravelToFun travel blogs, Dubai travel guides, holiday ideas, visa information and practical tips for planning your next trip.">
+
+    <meta name="keywords" content="Travel Blogs, Dubai Travel Guide, Dubai Travel Tips, Holiday Ideas, Visa Guides, TravelToFun">
 
     <link rel="canonical" href="https://traveltofun.onrender.com/blogs.html">
 
@@ -19,17 +21,16 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #263238;
             background: #f7fbfb;
         }
 
         a {
-            text-decoration: none;
             color: inherit;
+            text-decoration: none;
         }
 
-        /* Navbar */
         nav {
             background: #ffffff;
             border-bottom: 1px solid #e4eeee;
@@ -57,7 +58,6 @@
         .nav-links a {
             color: #263238;
             font-weight: 600;
-            transition: 0.3s;
         }
 
         .nav-links a:hover,
@@ -65,103 +65,179 @@
             color: #008c8c;
         }
 
-        /* Hero */
         .hero {
-            background: linear-gradient(135deg, #007f7f, #00a6a6);
+            background:
+                linear-gradient(rgba(0, 70, 70, 0.72), rgba(0, 95, 95, 0.72)),
+                url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
             color: white;
-            padding: 85px 7%;
+            padding: 90px 7%;
             text-align: center;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            margin: auto;
         }
 
         .hero h1 {
             font-size: 48px;
+            line-height: 1.2;
             margin-bottom: 18px;
         }
 
         .hero p {
-            max-width: 750px;
-            margin: auto;
             font-size: 18px;
             opacity: 0.95;
         }
 
-        /* Coming Soon */
-        .coming-soon {
-            min-height: 480px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 70px 7%;
+        .container {
+            width: 86%;
+            max-width: 1150px;
+            margin: auto;
         }
 
-        .coming-box {
-            width: 100%;
-            max-width: 850px;
-            background: #ffffff;
-            padding: 65px 45px;
+        .intro {
             text-align: center;
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            padding: 65px 0 35px;
         }
 
-        .coming-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 25px;
-            background: #e7f8f8;
+        .intro h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .intro p {
+            max-width: 760px;
+            margin: auto;
+            color: #607d83;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding: 35px 0 75px;
+        }
+
+        .blog-card {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.09);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .blog-content {
+            padding: 30px;
+        }
+
+        .category {
+            display: inline-block;
+            background: #e8f7f7;
             color: #008c8c;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 38px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 14px;
         }
 
-        .coming-box h2 {
-            font-size: 36px;
-            color: #263238;
-            margin-bottom: 15px;
+        .blog-content h2 {
+            font-size: 25px;
+            line-height: 1.35;
+            margin-bottom: 14px;
         }
 
-        .coming-box p {
-            max-width: 650px;
-            margin: 0 auto 28px;
-            color: #607d8b;
-            font-size: 17px;
+        .blog-content p {
+            color: #607d83;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            display: inline-block;
+            background: #008c8c;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 7px;
+            font-weight: 700;
+        }
+
+        .read-more:hover {
+            background: #007575;
+            text-decoration: none;
         }
 
         .topics {
+            background: #eefafa;
+            padding: 65px 0;
+            text-align: center;
+        }
+
+        .topics h2 {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .topic-list {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            gap: 10px;
-            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .topic {
-            background: #eefafa;
+            background: white;
+            padding: 12px 20px;
+            border-radius: 30px;
             color: #008c8c;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 14px;
             font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .cta {
+            background: #008c8c;
+            color: white;
+            text-align: center;
+            padding: 65px 7%;
+        }
+
+        .cta h2 {
+            font-size: 33px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 24px;
         }
 
         .cta-btn {
             display: inline-block;
-            background: #008c8c;
-            color: white;
-            padding: 13px 28px;
+            background: white;
+            color: #008c8c;
+            padding: 13px 27px;
             border-radius: 7px;
             font-weight: 700;
-            transition: 0.3s;
         }
 
         .cta-btn:hover {
-            background: #006f6f;
+            background: #eefafa;
+            text-decoration: none;
         }
 
-        /* Footer */
         footer {
             background: #17272b;
             color: #d9e4e6;
@@ -195,11 +271,10 @@
 
         .footer-links a {
             color: #b8c8cc;
-            transition: 0.3s;
         }
 
         .footer-links a:hover {
-            color: #ffffff;
+            color: white;
         }
 
         .footer-bottom {
@@ -210,8 +285,7 @@
             font-size: 14px;
         }
 
-        /* Responsive */
-        @media (max-width: 850px) {
+        @media (max-width: 800px) {
             nav {
                 flex-direction: column;
                 gap: 15px;
@@ -227,42 +301,42 @@
                 font-size: 38px;
             }
 
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 550px) {
             .hero {
                 padding: 65px 6%;
             }
 
             .hero h1 {
-                font-size: 32px;
+                font-size: 31px;
             }
 
             .hero p {
                 font-size: 16px;
             }
 
-            .coming-soon {
-                padding: 50px 6%;
+            .intro {
+                padding-top: 45px;
             }
 
-            .coming-box {
-                padding: 45px 25px;
+            .blog-content {
+                padding: 23px;
             }
 
-            .coming-box h2 {
-                font-size: 29px;
+            .blog-content h2 {
+                font-size: 22px;
             }
 
             .footer-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                font-size: 14px;
             }
         }
     </style>
@@ -270,114 +344,227 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html" class="logo">TravelToFun</a>
+<nav>
+    <a href="index.html" class="logo">TravelToFun</a>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blogs.html" class="active">Blogs</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blogs.html" class="active">Blogs</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Hero -->
-    <section class="hero">
+
+<section class="hero">
+    <div class="hero-content">
         <h1>Travel Blogs</h1>
 
         <p>
-            Helpful travel guides, destination inspiration, visa information
-            and practical travel tips are coming soon.
+            Explore travel guides, destination inspiration, holiday ideas,
+            visa information and practical tips to help you plan your next journey.
+        </p>
+    </div>
+</section>
+
+
+<main class="container">
+
+    <section class="intro">
+        <h2>Latest Travel Guide</h2>
+
+        <p>
+            Discover useful travel information and practical guides from TravelToFun.
+            Start with our latest Dubai travel guide for planning a seven-day bachelor trip in October 2026.
         </p>
     </section>
 
-    <!-- Coming Soon -->
-    <section class="coming-soon">
 
-        <div class="coming-box">
+    <section class="blog-grid">
 
-            <div class="coming-icon">
-                ✈
+        <!-- Blog 1 -->
+
+        <article class="blog-card">
+
+            <img
+                class="blog-image"
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85"
+                alt="Dubai skyline and modern city buildings"
+            >
+
+            <div class="blog-content">
+
+                <span class="category">Dubai Travel Guide</span>
+
+                <h2>
+                    Why October 2026 is the Ultimate Month for a 7-Day Dubai Bachelor Trip?
+                </h2>
+
+                <p>
+                    Explore how a seven-day Dubai bachelor trip can combine
+                    sightseeing, desert adventures, beaches, shopping and
+                    entertainment during October 2026.
+                </p>
+
+                <a
+                    href="blog/7-days-dubai-bachelor-trip-october-2026.html"
+                    class="read-more"
+                >
+                    Read Full Guide →
+                </a>
+
             </div>
 
-            <h2>Blogs Coming Soon</h2>
+        </article>
 
-            <p>
-                We are preparing useful and informative travel content for
-                TravelToFun. Soon, you will be able to explore destination
-                guides, holiday ideas, visa resources and practical travel tips.
-            </p>
 
-            <div class="topics">
-                <span class="topic">Destination Guides</span>
-                <span class="topic">Travel Tips</span>
-                <span class="topic">Visa Guides</span>
-                <span class="topic">Holiday Ideas</span>
-                <span class="topic">Travel Inspiration</span>
+        <!-- Future Blog Placeholder -->
+
+        <article class="blog-card">
+
+            <img
+                class="blog-image"
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
+                alt="Travel destination landscape"
+            >
+
+            <div class="blog-content">
+
+                <span class="category">Coming Soon</span>
+
+                <h2>
+                    More Travel Guides Coming Soon
+                </h2>
+
+                <p>
+                    TravelToFun will continue adding destination guides,
+                    travel tips, visa resources, holiday ideas and useful
+                    travel information for travelers.
+                </p>
+
+                <a href="contact.html" class="read-more">
+                    Contact Us →
+                </a>
+
             </div>
 
-            <a href="services.html" class="cta-btn">
-                Explore Travel Services
-            </a>
-
-        </div>
+        </article>
 
     </section>
 
-    <!-- Footer -->
-    <footer>
+</main>
 
-        <div class="footer-grid">
 
-            <div>
-                <h3>TravelToFun</h3>
+<section class="topics">
 
-                <p>
-                    TravelToFun is a travel information platform offering
-                    destination inspiration, travel guides, holiday ideas,
-                    visa resources and practical travel information.
-                </p>
-            </div>
+    <div class="container">
 
-            <div>
-                <h3>Quick Links</h3>
+        <h2>Explore Travel Topics</h2>
 
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+        <div class="topic-list">
 
-            <div>
-                <h3>Contact</h3>
+            <span class="topic">Destination Guides</span>
 
-                <ul class="footer-links">
-                    <li>
-                        <a href="tel:+917300007075">
-                            +91 73000 07075
-                        </a>
-                    </li>
+            <span class="topic">Dubai Travel</span>
 
-                    <li>
-                        <a href="mailto:info@travelsagaholidays.in">
-                            info@travelsagaholidays.in
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <span class="topic">Travel Tips</span>
+
+            <span class="topic">Visa Guides</span>
+
+            <span class="topic">Holiday Ideas</span>
+
+            <span class="topic">Travel Inspiration</span>
 
         </div>
 
-        <div class="footer-bottom">
-            © 2026 TravelToFun. All Rights Reserved.
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <h2>Plan Your Next Journey</h2>
+
+    <p>
+        Explore TravelToFun for travel information, holiday inspiration
+        and useful resources for your next trip.
+    </p>
+
+    <a href="services.html" class="cta-btn">
+        Explore Services
+    </a>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+            <h3>TravelToFun</h3>
+
+            <p>
+                TravelToFun is a travel information platform offering
+                destination inspiration, travel guides, holiday ideas,
+                visa resources and practical travel information.
+            </p>
         </div>
 
-    </footer>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul class="footer-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="blogs.html">Blogs</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="tel:+917300007075">
+                        +91 73000 07075
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:info@travelsagaholidays.in">
+                        info@travelsagaholidays.in
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        © 2026 TravelToFun. All Rights Reserved.
+    </div>
+
+</footer>
 
 </body>
 </html>
